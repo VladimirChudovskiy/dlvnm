@@ -15,8 +15,9 @@
    - `cp .env.example .env`
    - `php artisan key:generate`
    - `php artisan migrate`
+   - `php artisan install:api`
 4. Visit `https://your-domain.test` you should see Client side (Vue.js)
-5. Visit `https://your-domain.test/api` you should see Backend sid (Laravel)
+5. Visit `https://your-domain.test/api/ping` you should see {"message":"pong"} response from API (Laravel)
 
 
 ## Start development on local machine 
