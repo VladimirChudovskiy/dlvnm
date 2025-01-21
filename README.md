@@ -8,6 +8,13 @@
    - replace `your-app.test` with `your-domain.test` in the `client/vite.config.js`
    - replace `your-app.test` with `your-domain.test` in the `support/nginx/default.conf`
 3. Run `make build` command
+4. Run `make up` command
+5. Go inside API container `make api-bash`
+6. Run commands inside API container
+   - `composer install`
+   - `cp .env.example .env`
+   - `php artisan key:generate`
+   - `php artisan migrate`
 4. Visit `https://your-domain.test` you should see Client side (Vue.js)
 5. Visit `https://your-domain.test/api` you should see Backend sid (Laravel)
 
