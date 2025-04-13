@@ -4,7 +4,7 @@
 1. Clone the repo `git clone git@github.com:VladimirChudovskiy/dlvnm.git`
 2. Go inside cloned directory `cd dlvnm`
 2. Set up your domain
-   - add `127.0.0.1 your-domain.test` into `/ets/hosts`
+   - add `127.0.0.1 your-domain.test` into `/etc/hosts`
    - replace `your-app.test` with `your-domain.test` in the `client/vite.config.js`
    - replace `your-app.test` with `your-domain.test` in the `support/nginx/default.conf`
 3. Run `make build` command
